@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="container">
+                <div id="home-col" class="column">
+                    <h3>HOME</h3>
+                    <h4 id="home-score"></h4>
+                    <div class="button-container">
+                        <button id="home+1" onClick=addOnePointHome()>+1</button>
+                        <button id="home+2" onClick=addTwoPointsHome()>+2</button>
+                        <button id="home+3" onClick=addThreePointsHome()>+3</button>
+                    </div>
+                </div>
+                <div id="guest-col" class="column">
+                    <h3>AWAY</h3>
+                    <h4 id="guest-score"></h4>
+                    <div class="button-container">
+                        <button id="guest+1"
+                        onClick=addOnePointGuest()>+1</button>
+                        <button id="guest+2" onClick=addTwoPointsGuest()>+2</button>
+                        <button id="guest+3" onClick=addThreePointsGuest()>+3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <button id="reset-btn" onClick=reset()>GAME RESET</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
